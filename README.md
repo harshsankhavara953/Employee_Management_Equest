@@ -1,3 +1,6 @@
+
+# 📚 API Documentation – Employee Management System
+
 ```bash
 PORT=5000
 DB_NAME=Employee_management
@@ -16,8 +19,7 @@ CLOUDINARY_API_KEY=[YOURKEY]
 CLOUDINARY_API_SECRET=[YOURSCRET]
 ```
 
-```
-# 📚 API Documentation – Employee Management System
+
 
 This document describes all available API endpoints, organized by modules.  
 Authentication uses **JWT tokens** (bearer in headers). Access is restricted by user roles (Admin, HR Manager, Department Manager, Employee).
