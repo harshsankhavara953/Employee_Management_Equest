@@ -311,15 +311,17 @@ cd Employee_Management_Equest
 
 npm run dev   # for development (with nodemon)
 npm start     # for production
-
-
-
-
 ```
+#Notes
+```
+Some endpoints are not visible in the demo video because frontend integration is still in progress.
+ However, they are fully implemented and tested using Postman.
+```
+
 
 #**Video file**
 ```
 https://res.cloudinary.com/dyg8dlfbn/video/upload/v1758477611/demovideoofequest_rnqs71.mp4
 
-
 ```
+
