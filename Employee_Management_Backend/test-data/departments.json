@@ -1,0 +1,72 @@
+[
+    {
+        "department_name": "Human Resources",
+        "department_code": "HR001",
+        "description": "Responsible for recruitment, employee relations, benefits administration, and organizational development.",
+        "budget": 500000.00,
+        "manager_id": 1
+    },
+    {
+        "department_name": "Information Technology",
+        "department_code": "IT001",
+        "description": "Manages all technology infrastructure, software development, cybersecurity, and technical support.",
+        "budget": 1200000.00,
+        "manager_id": 3
+    },
+    {
+        "department_name": "Finance & Accounting",
+        "department_code": "FA001",
+        "description": "Handles financial planning, budgeting, accounting, and financial reporting.",
+        "budget": 750000.00,
+        "manager_id": 3
+    },
+    {
+        "department_name": "Marketing",
+        "department_code": "MK001",
+        "description": "Responsible for brand management, digital marketing, advertising, and market research.",
+        "budget": 800000.00,
+        "manager_id": 4
+    },
+    {
+        "department_name": "Operations",
+        "department_code": "OP001",
+        "description": "Oversees daily operations, process improvement, and supply chain management.",
+        "budget": 900000.00,
+        "manager_id": 5
+    },
+    {
+        "department_name": "Sales",
+        "department_code": "SL001",
+        "description": "Focuses on customer acquisition, relationship management, and revenue generation.",
+        "budget": 1100000.00,
+        "manager_id": 1
+    },
+    {
+        "department_name": "Customer Support",
+        "department_code": "CS001",
+        "description": "Provides customer service, technical support, and handles customer inquiries.",
+        "budget": 400000.00,
+        "manager_id": 2
+    },
+    {
+        "department_name": "Research & Development",
+        "department_code": "RD001",
+        "description": "Conducts product research, innovation, and development of new technologies.",
+        "budget": 1500000.00,
+        "manager_id": 3
+    },
+    {
+        "department_name": "Legal & Compliance",
+        "department_code": "LC001",
+        "description": "Handles legal matters, regulatory compliance, and risk management.",
+        "budget": 600000.00,
+        "manager_id": 4
+    },
+    {
+        "department_name": "Quality Assurance",
+        "department_code": "QA001",
+        "description": "Ensures product quality, testing, and maintains quality standards.",
+        "budget": 350000.00,
+        "manager_id": 5
+    }
+]

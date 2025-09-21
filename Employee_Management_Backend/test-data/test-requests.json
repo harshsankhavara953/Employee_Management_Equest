@@ -1,0 +1,199 @@
+{
+    "valid_department_requests": [
+        {
+            "description": "Valid department creation",
+            "method": "POST",
+            "endpoint": "/api/departments",
+            "body": {
+                "department_name": "Engineering",
+                "department_code": "ENG001",
+                "description": "Software engineering and development team",
+                "budget": 1000000.00,
+                "manager_id": 1
+            }
+        },
+        {
+            "description": "Department with minimum required fields",
+            "method": "POST",
+            "endpoint": "/api/departments",
+            "body": {
+                "department_name": "Security",
+                "department_code": "SEC001",
+                "manager_id": 2
+            }
+        },
+        {
+            "description": "Department with high budget",
+            "method": "POST",
+            "endpoint": "/api/departments",
+            "body": {
+                "department_name": "Research Lab",
+                "department_code": "RL001",
+                "description": "Advanced research and development laboratory",
+                "budget": 2000000.50,
+                "manager_id": 3
+            }
+        }
+    ],
+    "invalid_department_requests": [
+        {
+            "description": "Missing required fields",
+            "method": "POST",
+            "endpoint": "/api/departments",
+            "body": {
+                "department_name": "Test Department"
+            },
+            "expected_error": "Department name, code, and manager are required"
+        },
+        {
+            "description": "Duplicate department name",
+            "method": "POST",
+            "endpoint": "/api/departments",
+            "body": {
+                "department_name": "Human Resources",
+                "department_code": "HR002",
+                "manager_id": 1
+            },
+            "expected_error": "Department name already exists"
+        },
+        {
+            "description": "Duplicate department code",
+            "method": "POST",
+            "endpoint": "/api/departments",
+            "body": {
+                "department_name": "HR Department",
+                "department_code": "HR001",
+                "manager_id": 1
+            },
+            "expected_error": "Department code already exists"
+        },
+        {
+            "description": "Invalid manager ID",
+            "method": "POST",
+            "endpoint": "/api/departments",
+            "body": {
+                "department_name": "Test Department",
+                "department_code": "TD001",
+                "manager_id": 999
+            },
+            "expected_error": "Selected manager is not valid"
+        },
+        {
+            "description": "Negative budget",
+            "method": "POST",
+            "endpoint": "/api/departments",
+            "body": {
+                "department_name": "Test Department",
+                "department_code": "TD002",
+                "budget": -1000,
+                "manager_id": 1
+            },
+            "expected_error": "Budget must be a positive number"
+        },
+        {
+            "description": "Zero budget",
+            "method": "POST",
+            "endpoint": "/api/departments",
+            "body": {
+                "department_name": "Test Department",
+                "department_code": "TD003",
+                "budget": 0,
+                "manager_id": 1
+            },
+            "expected_error": "Budget must be a positive number"
+        },
+        {
+            "description": "Invalid budget format",
+            "method": "POST",
+            "endpoint": "/api/departments",
+            "body": {
+                "department_name": "Test Department",
+                "department_code": "TD004",
+                "budget": "invalid",
+                "manager_id": 1
+            },
+            "expected_error": "Budget must be a positive number"
+        }
+    ],
+    "update_requests": [
+        {
+            "description": "Valid department update",
+            "method": "PUT",
+            "endpoint": "/api/departments/1",
+            "body": {
+                "department_name": "Updated HR Department",
+                "description": "Updated description for HR department",
+                "budget": 600000.00
+            }
+        },
+        {
+            "description": "Update with invalid budget",
+            "method": "PUT",
+            "endpoint": "/api/departments/1",
+            "body": {
+                "budget": -500
+            },
+            "expected_error": "Budget must be a positive number"
+        },
+        {
+            "description": "Update non-existent department",
+            "method": "PUT",
+            "endpoint": "/api/departments/999",
+            "body": {
+                "department_name": "Test Update"
+            },
+            "expected_error": "Department not found"
+        }
+    ],
+    "get_requests": [
+        {
+            "description": "Get all departments",
+            "method": "GET",
+            "endpoint": "/api/departments"
+        },
+        {
+            "description": "Get all departments with pagination",
+            "method": "GET",
+            "endpoint": "/api/departments?page=1&limit=5"
+        },
+        {
+            "description": "Search departments by name",
+            "method": "GET",
+            "endpoint": "/api/departments?search=Human"
+        },
+        {
+            "description": "Search departments by code",
+            "method": "GET",
+            "endpoint": "/api/departments?search=IT001"
+        },
+        {
+            "description": "Get department by ID",
+            "method": "GET",
+            "endpoint": "/api/departments/1"
+        },
+        {
+            "description": "Get non-existent department",
+            "method": "GET",
+            "endpoint": "/api/departments/999",
+            "expected_error": "Department not found"
+        },
+        {
+            "description": "Get department managers",
+            "method": "GET",
+            "endpoint": "/api/departments/managers"
+        }
+    ],
+    "delete_requests": [
+        {
+            "description": "Delete existing department",
+            "method": "DELETE",
+            "endpoint": "/api/departments/1"
+        },
+        {
+            "description": "Delete non-existent department",
+            "method": "DELETE",
+            "endpoint": "/api/departments/999",
+            "expected_error": "Department not found"
+        }
+    ]
+}
