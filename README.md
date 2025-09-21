@@ -317,7 +317,7 @@ npm start     # for production
 
 #**Video file**
 ```
-https://player.cloudinary.com/embed/?cloud_name=dyg8dlfbn&public_id=demovideoofequest_rnqs71&profile=cld-default
+https://res.cloudinary.com/dyg8dlfbn/video/upload/v1758477611/demovideoofequest_rnqs71.mp4
 
 
 ```
