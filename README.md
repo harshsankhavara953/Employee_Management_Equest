@@ -1,4 +1,9 @@
 
+
+
+
+
+```
 # 📚 API Documentation – Employee Management System
 
 ```bash
@@ -193,9 +198,11 @@ Authentication uses **JWT tokens** (bearer in headers). Access is restricted by 
 
 
 ```
+#**Video file**
+```
+https://res.cloudinary.com/dyg8dlfbn/video/upload/v1758477611/demovideoofequest_rnqs71.mp4
 
-
-
+```
 ```
 # 👤 User Guide – Roles & Permissions
 
@@ -319,9 +326,5 @@ Some endpoints are not visible in the demo video because frontend integration is
 ```
 
 
-#**Video file**
-```
-https://res.cloudinary.com/dyg8dlfbn/video/upload/v1758477611/demovideoofequest_rnqs71.mp4
 
-```
 
