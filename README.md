@@ -198,11 +198,7 @@ Authentication uses **JWT tokens** (bearer in headers). Access is restricted by 
 
 
 ```
-#**Video file**
-```
-https://res.cloudinary.com/dyg8dlfbn/video/upload/v1758477611/demovideoofequest_rnqs71.mp4
 
-```
 ```
 # 👤 User Guide – Roles & Permissions
 
@@ -323,6 +319,13 @@ npm start     # for production
 ```
 Some endpoints are not visible in the demo video because frontend integration is still in progress.
  However, they are fully implemented and tested using Postman.
+```
+
+
+#**Video file**
+```
+https://res.cloudinary.com/dyg8dlfbn/video/upload/v1758477611/demovideoofequest_rnqs71.mp4
+
 ```
 
 
